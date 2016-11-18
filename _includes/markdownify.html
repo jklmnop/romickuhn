@@ -1,0 +1,4 @@
+{% capture output %}
+{% include {{ include.file }} %}
+{% endcapture %}
+{{ output | markdownify }}

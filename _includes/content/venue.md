@@ -1,0 +1,3 @@
+## Venue
+
+The Mask and Wig Clubhouse is located at 310 South Quince Street, Philadelphia PA (between 11th and 12th Streets).  Built in the early 1800s, the structure served time as a church, a carriage house, and dissecting rooms for Jefferson Medical College, until it was acquired by the University of Pennsylvania in 1894 for its all male comedy troupe, and it remains an active theater to this day.  It is a National Historic Landmark and contains murals by renowned artist Maxfield Parrish.  There are two levels which are accessible via stairs and elevator.  

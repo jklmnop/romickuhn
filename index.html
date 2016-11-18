@@ -1,5 +1,12 @@
 ---
 layout: default
+md:
+- url: content/venue.md
+- url: content/transit.md
+- url: content/event.md
+- url: content/accommodations.md
 ---
 
-<h1>Romickuhn</h1>
+{% for md in page.md %}
+    {% include markdownify.html file=md.url %}
+{% endfor %}
