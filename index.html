@@ -7,6 +7,8 @@ md:
 - url: content/accommodations.md
 ---
 
+<main>
 {% for md in page.md %}
     {% include markdownify.html file=md.url %}
 {% endfor %}
+</main>
