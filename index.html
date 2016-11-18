@@ -2,24 +2,26 @@
 layout: default
 ---
 
-<header id="page-home">
+<header class="page-home">
     <h1>{{ site.title }}</h1>
 </header>
 
 <main>
-    <section id="page-venue">
+    <section class="page-venue">
         {% include markdownify.html file="content/venue.md" %}
     </section>
 
-    <section id="page-event">
+    <section class="page-event">
         {% include markdownify.html file="content/event.md" %}
     </section>
 
-    <section id="page-transit">
+    <section class="page-transit">
         {% include markdownify.html file="content/transit.md" %}
     </section>
 
-    <section id="page-accommodations">
+    <section class="page-accommodations">
         {% include markdownify.html file="content/accommodations.md" %}
     </section>
 </main>
+
+{% include footer_scripts.html %}

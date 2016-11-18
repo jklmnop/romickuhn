@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
+    copy = require('gulp-copy'),
     cp = require('child_process');
 
 gulp.task('css', function() {
@@ -26,6 +27,14 @@ gulp.task('jekyll', function(code) {
         .on('close', code);
 });
 
+gulp.task('copy', function() {
+    gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
+        .pipe(gulp.dest('vendor/bootstrap'));
+
+    gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
+        .pipe(gulp.dest('vendor/jquery'));
+});
+
 gulp.task('server', function() {
     connect.server({
         root: ['_site'],
@@ -38,6 +47,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', [
+    'copy',
     'css',
     'jekyll',
     'server',
