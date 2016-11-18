@@ -14,7 +14,12 @@ gulp.task('css', function() {
 });
 
 gulp.task('jekyll', function(code) {
-    return cp.spawn('jekyll', ['build', '--watch', '--incremental', '--drafts'], {stdio: 'inherit'})
+    return cp.spawn('jekyll', ['build',
+            '--config', '_config.yml,_config_dev.yml',
+            '--watch',
+            '--incremental',
+            '--drafts'
+        ], {stdio: 'inherit'})
         .on('error', function(error){
             gutil.log(gutil.colors.red(error.message));
         })
@@ -29,7 +34,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('watch', function() {
-   gulp.watch('sass/**/*.?(s)css', ['css']);
+   gulp.watch('_dev/sass/**/*.?(s)css', ['css']);
 });
 
 gulp.task('default', [

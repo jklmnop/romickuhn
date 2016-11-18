@@ -1,0 +1,15 @@
+title: Romickühn
+slogan: Gettin' hitched
+email: spaceyraygun@gmail.com
+description: Romickühn
+baseurl: ""
+url: "http://localhost:4000"
+logo: ""
+github_username:  jklmnop
+markdown: kramdown
+exclude:
+ - package.json
+ - node_modules
+ - gulpfile.js
+ - README.md
+ - sass
