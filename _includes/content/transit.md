@@ -11,5 +11,3 @@ Some nearby garages:
 The Mask and Wig Club is also easily accessible via the Broad Street Line, Market-Frankford Line, and PATCO.  
 
 Taxis/ Uber/ Lyft are readily available in the area.  
-
-[Insert map of Mask and Wig Location]

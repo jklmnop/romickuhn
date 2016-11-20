@@ -1,0 +1,27 @@
+<main>
+    <div class="container">
+        <section class="page-venue col-sm-12">
+            {% include markdownify.html file="content/venue.md" %}
+            {% include map.html %}
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="page-event col-sm-12">
+            {% include markdownify.html file="content/event.md" %}
+            {% include rsvpify.html %}
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="page-transit col-sm-12">
+            {% include markdownify.html file="content/transit.md" %}
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="page-accommodations col-sm-12">
+            {% include markdownify.html file="content/accommodations.md" %}
+        </section>
+    </div>
+</main>
