@@ -7,11 +7,6 @@ header {
   background-size: cover;
 }
 
-footer {
-  height: 25vh;
-  background-color: purple;
-}
-
 abbr.amp {
   font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
   font-size: 110%;
@@ -37,4 +32,18 @@ abbr.amp {
     color: $white;
   }
 
+}
+
+footer {
+  height: 10vh;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
