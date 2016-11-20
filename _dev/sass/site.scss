@@ -7,3 +7,17 @@ footer {
   height: 25vh;
   background-color: purple;
 }
+
+abbr.amp {
+  font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+  font-size: 110%;
+  font-style: italic;
+  border: none;
+}
+
+.rsvp {
+  border: 1px solid white;
+  display: inline-block;
+  padding: .2em 1em;
+  color: white;
+}

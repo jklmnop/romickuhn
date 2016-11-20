@@ -1,4 +1,4 @@
-## Event
+## Event {#event}
 
 We are excited to have a party with our family and friends!  In the spirit of celebration and bringing everyone together, there will be drinks, food, music, and dancing.  There will not be a ceremony.  
 
