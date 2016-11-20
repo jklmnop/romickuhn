@@ -1,6 +1,10 @@
+$white: #fdfdfd;
+
 header {
   height: 100vh;
   background-color: green;
+  background-image: url('https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/14733227_315080385545291_1407322703995600896_n.jpg?ig_cache_key=MTM3MTM0NDA3OTMzMzQxOTY1Nw%3D%3D.2');
+  background-size: cover;
 }
 
 footer {
@@ -15,9 +19,22 @@ abbr.amp {
   border: none;
 }
 
-.rsvp {
-  border: 1px solid white;
-  display: inline-block;
-  padding: .2em 1em;
-  color: white;
+.page-home {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    color: $white;
+  }
+
+  .rsvp {
+    border: 1px solid $white;
+    display: inline-block;
+    padding: .2em 1em;
+    color: $white;
+  }
+
 }
