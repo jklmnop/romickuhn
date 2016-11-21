@@ -2,6 +2,7 @@
 
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
+    header = require('gulp-header'),
     connect = require('gulp-connect'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
@@ -12,12 +13,17 @@ var gulp = require('gulp'),
 gulp.task('css', function() {
     return gulp.src('_dev/sass/**/*.?(s)css')
         .pipe(sass({ outputStyle: 'compressed'}))
+        //inject front matter into final file for jekyll liquid
+        .pipe(header('---\n---\n'))
         .pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('img', function(){
    return gulp.src('_dev/img/*')
-       //.pipe(imagemin([imagemin.jpegtran()]))
+       .pipe(imagemin({
+           progressive: true,
+           optimizationLevel: 1
+       }))
        .pipe(gulp.dest('assets/img'));
 });
 
@@ -51,13 +57,13 @@ gulp.task('server', function() {
 
 gulp.task('watch', function() {
    gulp.watch('_dev/sass/**/*.?(s)css', ['css']);
-    //gulp.watch('_dev/img/*', ['img']);
+    gulp.watch('_dev/img/*', ['img']);
 });
 
 gulp.task('default', [
     'copy',
     'css',
-    //'img',
+    'img',
     'jekyll',
     'server',
     'watch'
