@@ -8,11 +8,6 @@ body {
 
 header {
   height: 100vh;
-  background-image: url('#{$url}/assets/img/image_02.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 abbr.amp {
@@ -62,4 +57,25 @@ footer {
 
 .img-responsive {
   width: 100%;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.bg-1 {
+    background-image: url('#{$url}/assets/img/image_02.jpg');
+  }
+
+  &.bg-2 {
+    min-height: 400px;
+    background-image: url('#{$url}/assets/img/image_01.jpg');
+  }
+
+  &.bg-3 {
+    min-height: 400px;
+    background-image: url('https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/15048256_1648150685477881_5611993148730376192_n.jpg?ig_cache_key=MTM4NDgxODY2MTc0MjgwMTUyNQ%3D%3D.2');
+  }
 }
