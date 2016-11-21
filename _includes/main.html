@@ -2,20 +2,36 @@
     <div class="container">
         <section class="page-venue col-sm-12">
             {% include markdownify.html file="content/venue.md" %}
-            {% include map.html %}
         </section>
+    </div>
+
+    <div>
+        {% include map.html %}
     </div>
 
     <div class="container">
         <section class="page-event col-sm-12">
             {% include markdownify.html file="content/event.md" %}
-            {% include rsvpify.html %}
         </section>
+    </div>
+
+    <div>
+        <img class="img-responsive" src="/assets/img/IMG_4170.JPG" />
     </div>
 
     <div class="container">
         <section class="page-accommodations col-sm-12">
             {% include markdownify.html file="content/accommodations.md" %}
+        </section>
+    </div>
+
+    <div>
+        <img class="img-responsive" src="https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/15048256_1648150685477881_5611993148730376192_n.jpg?ig_cache_key=MTM4NDgxODY2MTc0MjgwMTUyNQ%3D%3D.2" />
+    </div>
+
+    <div class="container">
+        <section class="page-rsvp col-sm-12">
+            {% include rsvpify.html %}
         </section>
     </div>
 </main>

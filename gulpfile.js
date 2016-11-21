@@ -6,12 +6,19 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
     copy = require('gulp-copy'),
+    imagemin = require('gulp-imagemin'),
     cp = require('child_process');
 
 gulp.task('css', function() {
     return gulp.src('_dev/sass/**/*.?(s)css')
         .pipe(sass({ outputStyle: 'compressed'}))
         .pipe(gulp.dest('assets/css'));
+});
+
+gulp.task('img', function(){
+   return gulp.src('_dev/img/*')
+       //.pipe(imagemin([imagemin.jpegtran()]))
+       .pipe(gulp.dest('assets/img'));
 });
 
 gulp.task('jekyll', function(code) {
@@ -44,11 +51,13 @@ gulp.task('server', function() {
 
 gulp.task('watch', function() {
    gulp.watch('_dev/sass/**/*.?(s)css', ['css']);
+    //gulp.watch('_dev/img/*', ['img']);
 });
 
 gulp.task('default', [
     'copy',
     'css',
+    //'img',
     'jekyll',
     'server',
     'watch'
