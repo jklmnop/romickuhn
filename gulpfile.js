@@ -23,6 +23,11 @@ gulp.task('css', function() {
         .pipe(gulp.dest('assets/css'));
 });
 
+gulp.task('js', function(){
+   return gulp.src('_dev/js/*.js')
+       .pipe(gulp.dest('assets/js'));
+});
+
 gulp.task('img', function(){
    return gulp.src('_dev/img/*')
        .pipe(imagemin({
@@ -51,6 +56,9 @@ gulp.task('copy', function() {
 
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
         .pipe(gulp.dest('vendor/jquery'));
+
+    gulp.src(['node_modules/jquery-smooth-scroll/src/jquery.smooth-scroll.js'])
+        .pipe(gulp.dest('vendor/jquery-smooth-scroll'));
 });
 
 gulp.task('server', function() {
@@ -62,12 +70,14 @@ gulp.task('server', function() {
 
 gulp.task('watch', function() {
    gulp.watch('_dev/sass/**/*.?(s)css', ['css']);
+    gulp.watch('_dev/js/*.js', ['js']);
     gulp.watch('_dev/img/*', ['img']);
 });
 
 gulp.task('default', [
     'copy',
     'css',
+    'js',
     'img',
     'jekyll',
     'server',
