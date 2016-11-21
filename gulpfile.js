@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     copy = require('gulp-copy'),
     imagemin = require('gulp-imagemin'),
+    autoprefixer = require('gulp-autoprefixer'),
     cp = require('child_process');
 
 gulp.task('css', function() {
@@ -15,6 +16,10 @@ gulp.task('css', function() {
         .pipe(sass({ outputStyle: 'compressed'}))
         //inject front matter into final file for jekyll liquid
         .pipe(header('---\n---\n'))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('assets/css'));
 });
 
