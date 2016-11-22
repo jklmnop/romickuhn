@@ -74,15 +74,15 @@ footer {
 }
 
 .bg-1 {
-  background-image: url('#{$url}/assets/img/image_02.jpg');
-}
-
-.bg-2 {
-  min-height: 400px;
   background-image: url('#{$url}/assets/img/image_01.jpg');
 }
 
+.bg-2 {
+  min-height: 500px;
+  background-image: url('#{$url}/assets/img/image_04.jpg');
+}
+
 .bg-3 {
-  min-height: 400px;
+  min-height: 500px;
   background-image: url('#{$url}/assets/img/image_03.jpg');
 }

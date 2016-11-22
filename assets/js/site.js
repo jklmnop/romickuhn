@@ -1,3 +1,1 @@
-$(function(){
-    $('nav a').smoothScroll();
-});
+$(function(){$("nav a").smoothScroll()});

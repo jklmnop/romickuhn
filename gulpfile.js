@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     copy = require('gulp-copy'),
     imagemin = require('gulp-imagemin'),
+    uglify = require('gulp-uglify'),
     autoprefixer = require('gulp-autoprefixer'),
     cp = require('child_process');
 
@@ -25,6 +26,7 @@ gulp.task('css', function() {
 
 gulp.task('js', function(){
    return gulp.src('_dev/js/*.js')
+       .pipe(uglify())
        .pipe(gulp.dest('assets/js'));
 });
 
@@ -61,6 +63,23 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('vendor/jquery-smooth-scroll'));
 });
 
+gulp.task('vendor-js', function() {
+    gulp.src([
+        'vendor/jquery/jquery.min.js',
+        'vendor/bootstrap/js/bootstrap.min.js',
+        'vendor/jquery-smooth-scroll/jquery.smooth-scroll.js'
+    ])
+        .pipe(uglify())
+        .pipe(concat('vendor.min.js'))
+        .pipe(gulp.dest('vendor'));
+});
+
+gulp.task('vendor-css', function() {
+    gulp.src([
+        'vendor/bootstrap/'
+    ])
+})
+
 gulp.task('server', function() {
     connect.server({
         root: ['_site'],
@@ -76,6 +95,7 @@ gulp.task('watch', function() {
 
 gulp.task('default', [
     'copy',
+    'vendor-js',
     'css',
     'js',
     'img',
