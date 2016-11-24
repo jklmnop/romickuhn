@@ -110,6 +110,15 @@ abbr.amp {
 
 }
 
+.event-stub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  font-size: 1.3em;
+
+}
+
 footer {
   height: 10vh;
   background-color: purple;

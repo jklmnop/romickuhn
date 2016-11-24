@@ -8,6 +8,6 @@ There are several hotels in the area.  These are a few recommendations.
 * [The Alexander Inn, 12th and Spruce Streets](http://www.alexanderinn.com)
 * [Rodeway Inn, 12th and Walnut Streets](https://www.choicehotels.com/pennsylvania/philadelphia/rodeway-inn-hotels/pa271)
 
-*Please note that our wedding coincides with the NFL Draft in Philadelphia, so hotel rooms are filling up rather quickly.*
-
 We recommend using Airbnb, as it encompasses a range of prices and accommodation styles, and is available in a variety of neighborhoods.  
+
+*Please note that our wedding coincides with the NFL Draft in Philadelphia, so hotel rooms are filling up rather quickly.*

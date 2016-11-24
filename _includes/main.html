@@ -1,5 +1,13 @@
 <main>
     <div class="container">
+        <section class="page-event col-sm-12">
+            {% include markdownify.html file="content/event.md" %}
+        </section>
+    </div>
+
+    <div class="parallax bg-2"></div>
+
+    <div class="container">
         <section class="page-venue col-sm-12">
             {% include markdownify.html file="content/venue.md" %}
         </section>
@@ -8,14 +16,6 @@
     <div>
         {% include map.html %}
     </div>
-
-    <div class="container">
-        <section class="page-event col-sm-12">
-            {% include markdownify.html file="content/event.md" %}
-        </section>
-    </div>
-
-    <div class="parallax bg-2"></div>
 
     <div class="container">
         <section class="page-accommodations col-sm-12">
