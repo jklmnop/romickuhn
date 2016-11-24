@@ -1,3 +1,5 @@
 $(function(){
-    $('nav a').smoothScroll();
+    $('nav a, .rsvp').smoothScroll({
+        offset: -50
+    });
 });

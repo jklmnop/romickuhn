@@ -1,1 +1,1 @@
-$(function(){$("nav a").smoothScroll()});
+$(function(){$("nav a, .rsvp").smoothScroll({offset:-50})});
