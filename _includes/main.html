@@ -2,7 +2,7 @@
     <div class="container">
         <section class="page-event col-sm-12">
             {% include markdownify.html file="content/event.md" %}
-            
+
             <script type="application/ld+json">
             {
               "@context": "http://schema.org",
@@ -12,6 +12,7 @@
               "startDate" : "2017-04-29T18:00",
               "endDate" : "2017-04-29T22:00",
               "url" : "{{ site.url }}",
+              "image": "{{ site.url }}/assets/img/image_01.jpg",
               "location" : {
                 "@type" : "Place",
                 "sameAs" : "http://www.maskandwig.com/",
