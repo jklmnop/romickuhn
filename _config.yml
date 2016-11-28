@@ -3,8 +3,7 @@ title: Romickühn
 slogan: Gettin' hitched
 email: spaceyraygun@gmail.com
 description: Romickühn
-url: //romickuhn.com
-enforce_ssl: romickuhn.com
+url: http://romickuhn.com
 github_username:  jklmnop
 markdown: kramdown
 exclude:
