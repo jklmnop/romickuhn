@@ -160,3 +160,7 @@ footer {
   min-height: 500px;
   background-image: url('#{$url}/assets/img/image_03.jpg');
 }
+
+.map {
+  filter: grayscale(80%);
+}
