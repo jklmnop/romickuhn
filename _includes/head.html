@@ -1,4 +1,10 @@
 <head>
+    <!--script type="text/javascript">
+        var host = "{{ site.url }}";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
+    </script-->
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -7,6 +13,7 @@
     <title>{{ site.title }}</title>
 
     <link href="{{ site.url }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link href="{{ site.url }}/assets/css/site.css" rel="stylesheet" />
+    <link href=" {{ site.url }}" rel="canonical" />
 </head>
