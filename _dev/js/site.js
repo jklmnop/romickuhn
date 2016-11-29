@@ -3,5 +3,7 @@ $(function(){
         offset: -50
     });
 
-    $('.rsvpify').attr('src', 'rsvpify.html');
+    setTimeout(function(){
+        $('.rsvpify').attr('src', 'rsvpify.html');
+    }, 1500);
 });
