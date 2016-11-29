@@ -5,5 +5,5 @@ $(function(){
 
     setTimeout(function(){
         $('.rsvpify').attr('src', 'rsvpify.html');
-    }, 1500);
+    }, 2000);
 });
