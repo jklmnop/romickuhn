@@ -2,4 +2,12 @@
 <script type="text/javascript" src="https://app.rsvpify.com/js/iframeResizer.min.js"></script>
 <script type="text/javascript">
     iFrameResize({autoResize: true,heightCalculationMethod: 'max',enablePublicMethods: true}, "#RSVPifyIFrame");
+
+    document.getElementById('RSVPifyIFrame').onload = function(){
+        var x = setTimeout(function(){
+            var height = document.getElementById('RSVPifyIFrame').style.height;
+            parent.postMessage(height, '*');
+            clearTimeout(x);
+        }, 1000);
+    }
 </script>
