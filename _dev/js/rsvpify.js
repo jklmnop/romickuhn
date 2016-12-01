@@ -17,7 +17,7 @@ $(function(){
     };
 
 
-    if(!isIE() && true == false) {
+    if(!isIE()) {
         $(window).on('rsvpify', function () {
             $('<iframe />', {
                 'src': 'http://romickuhn.app.rsvpify.com/',
