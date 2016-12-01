@@ -1,1 +1,1 @@
-$(function(){$("nav a, .rsvp").smoothScroll({offset:-50}),$(window).on("rsvpify",function(){var o=$("<iframe />",{src:"http://romickuhn.app.rsvpify.com/",id:"RSVPifyIFrame",allowtransparency:"true",frameborder:"no",scrolling:"no"}).on("load",function(){iFrameResize({autoResize:!0,heightCalculationMethod:"max",enablePublicMethods:!0},"#RSVPifyIFrame")});o.appendTo($(".rsvpify"))}).on("scroll",function(){$(window).trigger("rsvpify").off("rsvpify")})});
+$(function(){$("nav a, .rsvp").smoothScroll({offset:-50})});

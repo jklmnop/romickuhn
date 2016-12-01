@@ -165,7 +165,20 @@ footer {
   filter: grayscale(80%);
 }
 
-.rsvpify iframe {
-  width: 100%;
-  border: none;
+.rsvpify {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    padding: 20px 48px;
+    background-color: purple;
+    color: $white;
+  }
+
+  iframe {
+    width: 100%;
+    border: none;
+  }
 }
